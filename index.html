@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>hermes agent — Personal Automation Agent</title>
+<style>
+  :root { --navy:#283A51; --ink:#1c2733; --muted:#5b6b7d; --line:#e2e8ef; }
+  * { box-sizing:border-box; }
+  body { margin:0; font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans TC",sans-serif;
+         color:var(--ink); background:#fff; }
+  .wrap { max-width:760px; margin:0 auto; padding:64px 24px 96px; }
+  h1 { font-size:2rem; color:var(--navy); margin:0 0 8px; letter-spacing:-0.02em; }
+  .tag { color:var(--muted); font-size:1.05rem; margin:0 0 40px; }
+  h2 { font-size:1.15rem; color:var(--navy); margin:44px 0 12px; }
+  p, li { color:var(--ink); }
+  ul { padding-left:22px; }
+  li { margin:6px 0; }
+  a { color:var(--navy); }
+  .card { border:1px solid var(--line); border-radius:12px; padding:20px 24px; margin:24px 0; background:#fafbfd; }
+  footer { margin-top:64px; padding-top:24px; border-top:1px solid var(--line); color:var(--muted); font-size:.9rem; }
+  code { background:#f1f4f8; padding:1px 6px; border-radius:4px; font-size:.9em; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>hermes agent</h1>
+  <p class="tag">A single-user personal automation agent.</p>
+
+  <div class="card">
+    <strong>Summary.</strong> hermes agent is a private automation tool. It runs on one
+    Windows computer owned by its operator and acts only on that operator's own Google
+    Account. It is not distributed, not offered as a service, and has no other users.
+  </div>
+
+  <h2>What the application does</h2>
+  <p>
+    The agent automates the operator's own routine work: it reads and drafts email,
+    organises files in Drive, manages calendar events, and reads and writes
+    spreadsheets, documents, forms and presentations that belong to the operator.
+  </p>
+  <p>
+    Every action is started by the operator, on the operator's machine. The agent has no
+    server, no hosted backend, and no multi-tenant component. No third party can use it.
+  </p>
+
+  <h2>Whose data it accesses</h2>
+  <p>
+    Only the operator's own data, in the operator's own Google Account. The agent never
+    accesses another person's account, and it never acts on behalf of anyone else.
+  </p>
+
+  <h2>How Google user data is handled</h2>
+  <ul>
+    <li>Data is fetched directly from Google APIs to the operator's own computer.</li>
+    <li>Credentials are stored in a local file on that computer and nowhere else.</li>
+    <li>Data is never sold, shared, or transferred to any third party.</li>
+    <li>Data is never used to train or improve any machine-learning model.</li>
+    <li>No human other than the operator can read the data.</li>
+  </ul>
+  <p>See the <a href="./privacy.html">Privacy Policy</a> for the full disclosure.</p>
+
+  <h2>Google API scopes used</h2>
+  <p>
+    The agent requests access to Gmail, Google Calendar, Google Drive, Google Sheets,
+    Google Docs, Google Slides, Google Forms and Google Contacts — limited to the
+    operator's own account and to the narrowest scopes that each task requires.
+  </p>
+
+  <footer>
+    <a href="./privacy.html">Privacy Policy</a> &nbsp;·&nbsp;
+    <a href="./terms.html">Terms of Service</a> &nbsp;·&nbsp;
+    Contact: <a href="mailto:alexko4real@gmail.com">alexko4real@gmail.com</a>
+    <p>Last updated: 19 November 2026</p>
+  </footer>
+
+</div>
+</body>
+</html>
